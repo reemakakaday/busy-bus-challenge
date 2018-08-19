@@ -59,8 +59,8 @@
 #bottom-words {
   position: relative;
   width: 45%;
-  left: calc(50% - 88%/2);
-  top: 3.5%;
+  left: calc(50% - 45%/2);
+  top: 45%;
   font-family: Sofia Pro;
   font-size: 1.1em;
   color: white;
@@ -259,7 +259,7 @@ progress{
 }
 
 .buttons{
-  position:absolute;
+  position:relative;
   width: 80%;
   left: 12%;
 /*   left: calc(50% - 45%/2); */
