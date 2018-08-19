@@ -1,101 +1,106 @@
-<div id="container">  
-  <div class="ios_header">
-    <img id="app-name-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/app-name.png?raw=true">
-    <img id="time-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/time.png?raw=true">
-    <img id="battery-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/battery.png?raw=true">
-  </div>
-  
-  <div class="pageHeader">
-    <div class="title">
-      <div id="top-words">Bus Stop #62</div>
-      <div id="bottom-words"> Washington St.</div>
-    </div>
-  </div>
-  
-  <div class="back">
-    <img id="back-button" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/ios-back.png?raw=true">
-  </div>
-  <div class="vis-container">
-    <div class="headers">
-      <div id="line">Line</div>
-      <div id="destination">Destination</div>
-      <div id="frequency">Frequency</div>
-    </div>
+<html>
+  <link rel="stylesheet" href="css/style.css">
+  <body>
+    <div id="container">  
+      <div class="ios_header">
+        <img id="app-name-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/app-name.png?raw=true">
+        <img id="time-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/time.png?raw=true">
+        <img id="battery-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/battery.png?raw=true">
+      </div>
 
-    <div class="bounds">
-      <div id="eastbound">
-        Eastbound
-        <div class="eastprogress">
-          60
-          <progress value="40" max="100"></progress>
-          124
-          <progress value="77" max="100"></progress>
+      <div class="pageHeader">
+        <div class="title">
+          <div id="top-words">Bus Stop #62</div>
+          <div id="bottom-words"> Washington St.</div>
         </div>
       </div>
-      <div id="northbound">
-        Northbound
-        <div class="northprogress">
-          151
-          <progress value="63" max="100"></progress>
-        </div>
-      </div>
-      <div id="southbound">
-        Southbound
-        <div class="southprogress">
-          J14
-          <progress value="66" max="100"></progress>
-          124
-          <progress value="77" max="100"></progress>
-        </div>
-      </div>
-      <div id="reroute">
-        Reroute
-        <div class="rerouteprogress">
-          6x
-          <progress value="0" max="100"></progress>
-        </div>
-      </div>
-      <div id="outofservice">
-        Out of Service
-        <div class="oosprogress">
-          4
-          <progress value="0" max="100"></progress>
-          20
-          <progress value="0" max="100"></progress>
-          157
-          <progress value="0" max="100"></progress>
-        </div>
-      </div>
-    </div>
 
-    <div class="destinations">
-      <div id="randolph">Randolph/Harbor Dr</div>
-      <div id="navy-pier">Navy Pier</div>
-      <div id="devon">Devon/Clark</div>
-      <div id="stony">103rd/Stony Island</div>
-      <div id="navy-pier2">Navy Pier</div>
-      <div id="jackson">Jackson Park Express</div>
-      <div id="cottage">Cottage Grove</div>
-      <div id="madison">Madison</div>
-      <div id="streeterville">Streeterville/Taylor</div>
-    </div>
+      <div class="back">
+        <img id="back-button" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/ios-back.png?raw=true">
+      </div>
+      <div class="vis-container">
+        <div class="headers">
+          <div id="line">Line</div>
+          <div id="destination">Destination</div>
+          <div id="frequency">Frequency</div>
+        </div>
 
-    <div class="frequencies">
-      <div class="frequencies" id="freq1">Every 20 min</div>
-      <div class="frequencies" id="freq2">Every 10 min</div>
-      <div class="frequencies" id="freq3">Every 16 min</div>
-      <div class="frequencies" id="freq4">Every 15 min</div>
-      <div class="frequencies" id="freq5">Every 10 min</div>
-      <div class="frequencies" id="freq6">N/A</div>
-      <div class="frequencies" id="freq7">Resumes 12:10am</div>
-      <div class="frequencies" id="freq8">Resumes 12:10am</div>
-      <div class="frequencies" id="freq9">Resumes 6:00am</div>
-    </div>
+        <div class="bounds">
+          <div id="eastbound">
+            Eastbound
+            <div class="eastprogress">
+              60
+              <progress value="40" max="100"></progress>
+              124
+              <progress value="77" max="100"></progress>
+            </div>
+          </div>
+          <div id="northbound">
+            Northbound
+            <div class="northprogress">
+              151
+              <progress value="63" max="100"></progress>
+            </div>
+          </div>
+          <div id="southbound">
+            Southbound
+            <div class="southprogress">
+              J14
+              <progress value="66" max="100"></progress>
+              124
+              <progress value="77" max="100"></progress>
+            </div>
+          </div>
+          <div id="reroute">
+            Reroute
+            <div class="rerouteprogress">
+              6x
+              <progress value="0" max="100"></progress>
+            </div>
+          </div>
+          <div id="outofservice">
+            Out of Service
+            <div class="oosprogress">
+              4
+              <progress value="0" max="100"></progress>
+              20
+              <progress value="0" max="100"></progress>
+              157
+              <progress value="0" max="100"></progress>
+            </div>
+          </div>
+        </div>
 
-    <div class="buttons">
-      <button id="track">Track A Bus</button>
-      <button id="plan">Plan Bus Route</button>
-      <button id="route-to-stop">Route to Bus Stop #62</button>
+        <div class="destinations">
+          <div id="randolph">Randolph/Harbor Dr</div>
+          <div id="navy-pier">Navy Pier</div>
+          <div id="devon">Devon/Clark</div>
+          <div id="stony">103rd/Stony Island</div>
+          <div id="navy-pier2">Navy Pier</div>
+          <div id="jackson">Jackson Park Express</div>
+          <div id="cottage">Cottage Grove</div>
+          <div id="madison">Madison</div>
+          <div id="streeterville">Streeterville/Taylor</div>
+        </div>
+
+        <div class="frequencies">
+          <div class="frequencies" id="freq1">Every 20 min</div>
+          <div class="frequencies" id="freq2">Every 10 min</div>
+          <div class="frequencies" id="freq3">Every 16 min</div>
+          <div class="frequencies" id="freq4">Every 15 min</div>
+          <div class="frequencies" id="freq5">Every 10 min</div>
+          <div class="frequencies" id="freq6">N/A</div>
+          <div class="frequencies" id="freq7">Resumes 12:10am</div>
+          <div class="frequencies" id="freq8">Resumes 12:10am</div>
+          <div class="frequencies" id="freq9">Resumes 6:00am</div>
+        </div>
+
+        <div class="buttons">
+          <button id="track">Track A Bus</button>
+          <button id="plan">Plan Bus Route</button>
+          <button id="route-to-stop">Route to Bus Stop #62</button>
+        </div>
     </div>
-</div>
-</div>
+    </div>
+  </body>
+</html>
