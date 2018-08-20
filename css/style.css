@@ -35,7 +35,7 @@
 .title{
   position: absolute;
   width: 30%;
-  height: 8%;
+  height: 5%;
   left: calc(50% - 30%/2);
   top: 0%;
   background-color: #2F80ED;
@@ -68,7 +68,7 @@
 
 .headers {
   position: absolute;
-  top: 9%;
+  top: 5%;
   left: 10%;
   width: 80%;
   font-family: Sofia Pro;
