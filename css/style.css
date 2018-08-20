@@ -263,7 +263,7 @@ progress{
   width: 80%;
   left: 12%;
 /*   left: calc(50% - 45%/2); */
-
+  bottom: -525px;
   top: 860%;
   font-family: Sofia Pro;
   text-align: center;
