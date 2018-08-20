@@ -5,7 +5,7 @@
 }
 
 .ios_header{
-  height: 2%;
+  height: 3%;
   width: 100%;
   left: 0%;
   top: 0%;
@@ -34,9 +34,9 @@
 
 .title{
   position: absolute;
-  width: 30%;
-  height: 5%;
-  left: calc(50% - 30%/2);
+  width: 50%;
+  height: 10%;
+  left: calc(50% - 50%/2);
   top: 0%;
   background-color: #2F80ED;
   border-radius: 8px;
@@ -58,8 +58,8 @@
 
 #bottom-words {
   position: relative;
-  width: 45%;
-  left: calc(50% - 45%/2);
+  width: 60%;
+  left: calc(50% - 60%/2);
   top: 45%;
   font-family: Sofia Pro;
   font-size: 1.1em;
@@ -68,7 +68,7 @@
 
 .headers {
   position: absolute;
-  top: 5%;
+  top: 15%;
   left: 10%;
   width: 80%;
   font-family: Sofia Pro;
@@ -260,8 +260,8 @@ progress{
 
 .buttons{
   position:relative;
-  width: 80%;
-  left: 12%;
+  width: 50%;
+  left: 25%;
 /*   left: calc(50% - 45%/2); */
   bottom: -525px;
   top: 860%;
