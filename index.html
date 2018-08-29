@@ -1,106 +1,292 @@
-<html>
-  <link rel="stylesheet" href="css/style.css">
-  <body>
-    <div id="container">
-      <div class="ios_header">
-        <img id="app-name-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/app-name.png?raw=true">
-        <img id="time-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/time.png?raw=true">
-        <img id="battery-img" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/battery.png?raw=true">
-      </div>
-
-      <div class="pageHeader">
-        <div class="title">
-          <div id="top-words">Bus Stop #62</div>
-          <div id="bottom-words"> Washington St.</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Busy Bus Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-heading">
+            <h3>Bus Stop #62</h3>
+            <h1>Washington St.</h1>
         </div>
-      </div>
-
-      <div class="back">
-        <img id="back-button" src="https://github.com/reemakakaday/busy-bus-challenge/blob/master/Images/ios-back.png?raw=true">
-      </div>
-      <div class="vis-container">
-        <div class="headers">
-          <div id="line">Line</div>
-          <div id="destination">Destination</div>
-          <div id="frequency">Frequency</div>
-        </div>
-
-        <div class="bounds">
-          <div id="eastbound">
-            Eastbound
-            <div class="eastprogress">
-              60
-              <progress value="40" max="100"></progress>
-              124
-              <progress value="77" max="100"></progress>
+    </header>
+    <main class="main">
+        <div class="main-header">
+            <div class="main-heading">
+                <h2>Line</h2>
             </div>
-          </div>
-          <div id="northbound">
-            Northbound
-            <div class="northprogress">
-              151
-              <progress value="63" max="100"></progress>
+            <div class="main-heading text-center">
+                <h2>Destination</h2>
             </div>
-          </div>
-          <div id="southbound">
-            Southbound
-            <div class="southprogress">
-              J14
-              <progress value="66" max="100"></progress>
-              124
-              <progress value="77" max="100"></progress>
+            <div class="main-heading text-right">
+                <h2>Frequency</h2>
             </div>
-          </div>
-          <div id="reroute">
-            Reroute
-            <div class="rerouteprogress">
-              6x
-              <progress value="0" max="100"></progress>
-            </div>
-          </div>
-          <div id="outofservice">
-            Out of Service
-            <div class="oosprogress">
-              4
-              <progress value="0" max="100"></progress>
-              20
-              <progress value="0" max="100"></progress>
-              157
-              <progress value="0" max="100"></progress>
-            </div>
-          </div>
         </div>
+        <div class="data">
+            <ul class="data-list">
+                <li class="data-list-heading">
+                    Eastbound
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                60
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Randolph/Harbor Dr
+                            </p>
+                            <p>
+                                Every 20 min
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
 
-        <div class="destinations">
-          <div id="randolph">Randolph/Harbor Dr</div>
-          <div id="navy-pier">Navy Pier</div>
-          <div id="devon">Devon/Clark</div>
-          <div id="stony">103rd/Stony Island</div>
-          <div id="navy-pier2">Navy Pier</div>
-          <div id="jackson">Jackson Park Express</div>
-          <div id="cottage">Cottage Grove</div>
-          <div id="madison">Madison</div>
-          <div id="streeterville">Streeterville/Taylor</div>
-        </div>
+                        </div>
+                        <div class="graph-front graph-orange" style="width: 43%;">
 
-        <div class="frequencies">
-          <div class="frequencies" id="freq1">Every 20 min</div>
-          <div class="frequencies" id="freq2">Every 10 min</div>
-          <div class="frequencies" id="freq3">Every 16 min</div>
-          <div class="frequencies" id="freq4">Every 15 min</div>
-          <div class="frequencies" id="freq5">Every 10 min</div>
-          <div class="frequencies" id="freq6">N/A</div>
-          <div class="frequencies" id="freq7">Resumes 12:10am</div>
-          <div class="frequencies" id="freq8">Resumes 12:10am</div>
-          <div class="frequencies" id="freq9">Resumes 6:00am</div>
-        </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="data-list-item">
+                        <div class="data-list-item-data">
+                            <div class="data-list-item-data-num">
+                                <p>
+                                    124
+                                </p>
+                            </div>
+                            <div class="data-list-item-data-text">
+                                <p>
+                                    Navy Pier
+                                </p>
+                                <p>
+                                    Every 10 min
+                                </p>
+                            </div>
+                        </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
 
-        <div class="buttons">
-          <button id="track">Track A Bus</button>
-          <button id="plan">Plan Bus Route</button>
-          <button id="route-to-stop">Route to Bus Stop #62</button>
+                        </div>
+                        <div class="graph-front graph-orange" style="width: 76%;">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="data-list">
+                <li class="data-list-heading">
+                    Northbound
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                151
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Davon/Clark
+                            </p>
+                            <p>
+                                Every 16 min
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front graph-blue"  style="width: 61%;">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="data-list">
+                <li class="data-list-heading">
+                    Southbound
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                J14
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                103rd/Stony Island
+                            </p>
+                            <p>
+                                Every 15 min
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front graph-blue"  style="width: 64%;">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                124
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Navy Pier
+                            </p>
+                            <p>
+                                Every 10 min
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front graph-blue"  style="width: 76%;">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="data-list">
+                <li class="data-list-heading">
+                    Reroute
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                6x
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Jackson Park Express
+                            </p>
+                            <p>
+                                N/A
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="data-list">
+                <li class="data-list-heading">
+                    Out of Service
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                4
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Cottage Grove
+                            </p>
+                            <p>
+                                Resumes 12:10am
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                20
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Madison
+                            </p>
+                            <p>
+                                Resumes 12:10am
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="data-list-item">
+                    <div class="data-list-item-data">
+                        <div class="data-list-item-data-num">
+                            <p>
+                                157
+                            </p>
+                        </div>
+                        <div class="data-list-item-data-text">
+                            <p>
+                                Streeterville/Taylor
+                            </p>
+                            <p>
+                                Resumes 6:00am
+                            </p>
+                        </div>
+                    </div>
+                    <div class="data-list-item-graph">
+                        <div class="graph-back">
+
+                        </div>
+                        <div class="graph-front">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
-    </div>
-  </body>
+        <div class="cta">
+            <div class="cta-content">
+               <button class="btn btn-secondary">Plan Bus Route</button>
+                <button class="btn btn-primary">Track A Bus</button>
+                <button class="btn btn-secondary">Route To Bus Stop <span>#62</span></button>
+            </div>
+        </div>
+    </main>
+
+</body>
 </html>
