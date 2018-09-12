@@ -16,12 +16,6 @@ html {
     font-size: 10px;
 }
 
-@media only screen and (max-width:770px){
-    html {
-        font-size: 9px;
-    }
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(179.84deg, #F7FBFF 33.74%, rgba(232, 241, 253, 0.827324) 70.62%, rgba(172, 204, 246, 0.170802) 96.57%, rgba(157, 194, 244, 0) 99.77%);
@@ -37,6 +31,31 @@ ul li {
     display: inline-block;
 }
 
+/* Status Bar */
+
+.ios_header{
+  height: 3%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #1673FB;
+}
+
+#app-name-img{
+  position: absolute;
+  left: 0%;
+}
+
+#time-img{
+  position: absolute;
+  left: calc(50% - 10%/2);
+}
+
+#battery-img{
+  position: relative;
+  right: -91%;
+}
+
 /* Header styling */
 
 .header {
@@ -46,12 +65,6 @@ ul li {
     padding: 2rem 0;
     color: #fff;
 }
-
-@media only screen and (max-width:1024px){ /* ipad pro */
-    .header {
-        background: transparent;
-        padding: 0;
-    }
 
     .header-heading {
         padding: 1.5rem 3rem 1rem 3rem;
@@ -71,6 +84,7 @@ ul li {
     font-weight: 100;
     font-size: 1.4rem;
     margin-bottom: .8rem;
+    text-align:center;
 }
 
 .header-heading h1 {
@@ -87,11 +101,7 @@ ul li {
     margin-top: 3.3rem;
 }
 
-@media only screen and (max-width:550px){
-    .main {
-        width: 90%;
-    }
-}
+
 
 .main-header {
     display: flex;
@@ -146,11 +156,6 @@ ul li {
     margin-bottom: .5rem;
 }
 
-@media only screen and (max-width:550px){
-    .data-list-item-data {
-        font-size: 1.2rem;
-    }
-}
 
 .data-list-item-data-num {
     flex: 1;
@@ -197,13 +202,6 @@ ul li {
     margin-bottom: 5.3rem;
 }
 
-@media only screen and (max-width:670px){
-    .cta-content {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /* Buttons */
 
 .btn {
@@ -226,6 +224,37 @@ ul li {
         padding: 1rem;
     }
 }
+
+@media only screen and (max-width:770px){
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width:670px){
+    .cta-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .data-list-item-data {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1024px){ /* ipad pro */
+    .header {
+        background: transparent;
+        padding: 0;
+    }
 
 .btn-primary {
     background: var(--blue-color);
